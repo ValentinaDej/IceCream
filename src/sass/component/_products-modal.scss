@@ -1,0 +1,316 @@
+@media screen and (max-width: 767px) {
+    .modal {
+        width: 280px;
+    }
+
+    .modal-title::before {
+        content: '';
+        top: 115px;
+        left: 70px;
+    }
+    
+    .modal-title::after {
+        content: '';
+        top: 104px;
+        left: 70px;
+    }
+}
+
+.modal {
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    background-color: #FCFCFC;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 28px 20px 32px 20px;
+}
+
+.modal-close-btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--main-dark-text-color);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 187px;
+}
+
+.modal-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    width: 132px;
+    height: 132px;
+    top: 115px;
+    left: 70px;
+}
+
+.modal-title::after {
+    content: '';
+    background-image: url(../images-products/modal-ice-mobil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    top: 104px;
+    left: 70px;
+    border-radius: 50%;
+}
+
+.chart {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 8px;
+}
+
+.chard_container {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #9CBE8F;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.chart__component {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.8;
+    color: var(--main-dark-text-color);
+}
+
+.chart-list {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.chart-list-container {
+    width: 43px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+}
+
+.kcal::after {
+    content: '';
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    padding: 38px 27px;
+    position: absolute;
+    top: -52px;
+    left: -8px;
+}
+
+.prote::after {
+    content: '';
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    padding: 38px 27px;
+    position: absolute;
+    top: -52px;
+    left: -8px;
+}
+
+.fats::after {
+    content: '';
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    padding: 38px 27px;
+    position: absolute;
+    top: -52px;
+    left: -8px;
+}
+
+.carbs::after {
+    content: '';
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    padding: 38px 27px;
+    position: absolute;
+    top: -52px;
+    left: -8px;
+}
+
+.chart__calories {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: var(--main-dark-text-color);
+    margin-bottom: 47px;
+}
+
+.modal-sub-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--main-dark-text-color);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.components__column__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-dark-text-color);
+    text-align: left;
+}
+
+.components__column__number {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-dark-text-color);
+    text-align: right;
+}
+
+table {
+    border-spacing: 0 11px;
+    width: 238px;
+    margin-bottom: 42px;
+}
+
+.modal-form-name {
+    width: 100%;
+    height: 42px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        color: var(--main-dark-text-color);
+    }
+}
+
+.modal-form-tel {
+    width: 100%;
+    height: 42px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        color: var(--main-dark-text-color);
+    }
+}
+
+.modal-form-note {
+    width: 100%;
+    height: 84px;
+    resize: none;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    padding-top: 16px;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        color: var(--main-dark-text-color);
+    }
+}
+
+.modal-form-btn {
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 528px;
+        height: 995px;
+        top: 50%;
+           
+    }
+
+    .chart {
+        gap: 27px;
+    }
+
+    .group-component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-list {
+        gap: 27px;
+    }
+
+    .modal-title::before {
+        content: '';
+        top: 90px;
+        left: 192px;
+    }
+    
+    .modal-title::after {
+        content: '';
+        top: 80px;
+        left: 192px;
+    } 
+    
+    table {
+        width: 485px;
+    }
+
+    .input-field {
+        width: 368px;
+    }
+
+    .modal-form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

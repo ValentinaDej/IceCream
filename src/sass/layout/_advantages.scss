@@ -1,0 +1,160 @@
+@media screen and (min-width: 320px) {
+  .advantages-section {
+    padding-top: 42px;
+    padding-bottom: 60px;
+    background-color: var(--background-color);
+  }
+  .advantage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+  }
+  .advantage__item {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      content: '';
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: var(--current-color);
+      margin-bottom: 16px;
+    }
+  }
+
+  .advantage__item_icon-cow::before {
+    background-image: url(../images/advantages/cow.svg);
+  }
+  .advantage__item_icon-weight::before {
+    background-image: url(../images/advantages/weight.png);
+  }
+  .advantage__item_icon-ice-cream::before {
+    background-image: url(../images/advantages/ice-cream.png);
+  }
+  .advantage__title {
+    margin-bottom: 18px;
+    @include font($fw: 700, $fs: 36px, $lh: 42px);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-light-text-color);
+  }
+
+  .advantage__description {
+    @include font($fw: 700, $fs: 12px, $lh: 20px);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-light-text-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-top: 53px;
+    padding-bottom: 204px;
+  }
+  .advantage {
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+  .advantage__item {
+    width: 152px;
+
+    &::before {
+      margin-bottom: 32px;
+    }
+  }
+  .advantage__title {
+    margin-bottom: 16px;
+    @include font($fw: 700, $fs: 48px, $lh: 59px);
+  }
+  .advantage__description {
+    @include font($fw: 400, $fs: 14px, $lh: 24px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-section {
+    padding-top: 60px;
+    padding-bottom: 180px;
+  }
+  .advantage {
+    gap: 32px;
+  }
+  .advantage__item {
+    width: 368px;
+    &::before {
+      margin-bottom: 40px;
+    }
+  }
+  .advantage__title {
+    margin-bottom: 16px;
+    @include font($fw: 700, $fs: 58px, $lh: 71px);
+  }
+  .advantage__description {
+    @include font($fw: 400, $fs: 16px, $lh: 28px);
+  }
+}
+
+// .advantages-section {
+//   padding-top: 60px;
+//   padding-bottom: 180px;
+//   background-color: var(--background-color);
+// }
+// .advantage {
+//   display: flex;
+//   justify-content: center;
+//   gap: 32px;
+// }
+// .advantage__item {
+//   text-align: center;
+//   width: 368px;
+
+//   &::before {
+//     content: '';
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//     height: 50px;
+//     width: 50px;
+//     border-radius: 50%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-color: var(--current-color);
+//     margin-bottom: 40px;
+//   }
+// }
+
+// .advantage__item_icon-cow::before {
+//   background-image: url(../images/advantages/cow.svg);
+// }
+// .advantage__item_icon-weight::before {
+//   background-image: url(../images/advantages/weight.png);
+// }
+// .advantage__item_icon-ice-cream::before {
+//   background-image: url(../images/advantages/ice-cream.png);
+// }
+
+// .advantage__title {
+//   margin-bottom: 16px;
+//   @include font($fw: 700, $fs: 58px, $lh: 71px);
+//   text-align: center;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: var(--main-light-text-color);
+// }
+
+// .advantage__description {
+//   @include font($fw: 400, $fs: 16px, $lh: 28px);
+//   text-align: center;
+//   letter-spacing: 0.02em;
+//   color: var(--main-light-text-color);
+// }

@@ -1,0 +1,143 @@
+<section class="products" id="our-products">
+    <p lang="en" class="products-text">100% natural</p>
+    <h2 class="products-title">products</h2>
+    <ul class="products-list list">
+        <li class="products-list__item ice-crem-one">
+            <div class="products-card ice-cream">
+                <h3 class="card-name name-ice-cream">ice cream</h3>
+                <p class="card-text text-ice-cream">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                <button type="button" class="btn-arrow" data-modal-products-open1>
+                    <svg class="card-icon">
+                        <use href="./images-products/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="products-list__item ice-crem-two">
+            <div class="products-card ice-coffe">
+                <h3 class="card-name name-ice-coffe">ice coffee</h3>
+                <p class="card-text text-ice-coffe">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
+                <button type="button" class="btn-arrow" data-modal-products-open2>
+                    <svg class="card-icon">
+                        <use href="./images-products/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+        <li class="products-list__item ice-crem-three">
+            <div class="products-card milkshake">
+                <h3 class="card-name name-milkshake">milkshakes</h3>
+                <p class="card-text text-milkshake">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
+                <button type="button" class="btn-arrow" data-modal-products-open3>
+                    <svg class="card-icon">
+                        <use href="./images-products/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Modal window -->
+    <div class="backdrop-products is-hidden" data-modal-products>
+        <div class="modal">
+            <button class="close-btn" type="button" data-modal-products-close>
+                <svg class="modal-close-btn-icon">
+                    <use href="./images-products/sprite.svg#close-bth"></use>
+                </svg>
+            </button>
+            <h2 class="modal-title">Chololate icecream</h2>
+            <div class="group-component">
+                <ul class="chart list">
+                    <li class=" chart-item">
+                        <div class="chard_container">
+                            <p class="chart__component">320</p>
+                        </div>
+                    </li>
+                    <li class=" chart-item">
+                        <div class="chard_container">
+                            <p class="chart__component">4g</p>
+                        </div>
+                    </li>
+                    <li class=" chart-item">
+                        <div class="chard_container">
+                            <p class="chart__component">8,2g</p>
+                        </div>
+                    </li>
+                    <li class=" chart-item">
+                        <div class="chard_container">
+                            <p class="chart__component">40,4g</p>
+                        </div>
+                    </li>
+                </ul> 
+                <ul class="chart-list list">
+                    <li class="chart-list__item">
+                        <div class="chart-list-container">
+                            <p class="chart__calories kcal">kcal</p>
+                        </div>
+                    </li>
+                    <li class="chart-list__item">
+                        <div class="chart-list-container">
+                            <p class="chart__calories prote">Prote...</p>
+                        </div>
+                    </li>
+                    <li class="chart-list__item">
+                        <div class="chart-list-container">
+                            <p class="chart__calories fats">Fats</p>
+                        </div>
+                    </li>
+                    <li class="chart-list__item">
+                        <div class="chart-list-container">
+                            <p class="chart__calories carbs">Carbs</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h3 class="modal-sub-title">Ingredients</h3>
+            <table class="components">
+                <tr class="components_column">
+                    <td class="components__column__text">Milk</td>
+                    <td class="components__column__number">100ml</td>
+                </tr>
+                <tr class="components_column">
+                    <td class="components__column__text">Belgian chocolate</td>
+                    <td class="components__column__number">20g</td>
+                </tr>
+                <tr class="components_column">
+                    <td class="components__column__text">Cream</td>
+                    <td class="components__column__number">150ml</td>
+                </tr>
+                <tr class="components_column">
+                    <td class="components__column__text">Cocoa powder</td>
+                    <td class="components__column__number">30g</td>
+                </tr>
+                <tr class="components_column">
+                    <td class="components__column__text">Sugar</td>
+                    <td class="components__column__number">40g</td>
+                </tr>
+                <tr class="components_column">
+                    <td class="components__column__text">Vanilla sugar</td>
+                    <td class="components__column__number">10g</td>
+                </tr>
+            </table>
+            <form class="modal-form">
+                <label class="modal-form-input" for="name">
+                    <span class="modal-form-container">
+                        <input type="text" id="name" class="modal-form-name input-field" name="user-name" pattern="[a-zA-Zа-яА-ЯіІїЇ]+" placeholder="Name">
+                    </span>
+                </label>
+                <label class="modal-form-input" for="phone">
+                    <span class="modal-form-container">
+                        <input type="tel" id="phone" class="modal-form-tel input-field" name="user-phone" pattern="[0-9{3}-0-9{3}-0-9{2}-0-9{2}" title="xxx-xxx-xx-xx" placeholder="Phone">
+                    </span>
+                </label>
+                <label class="modal-form-input" for="note">
+                    <textarea name="user-note" id="note" class="modal-form-note input-field" placeholder="Comment"></textarea>
+                </label>
+                <button type="submit" class="button-filled modal-form-btn" lang="uk">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- <script src="./js/modal-products.js"></script> -->

@@ -1,0 +1,223 @@
+.backdrop {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--timing-duration) var(--timing-function);
+  overflow-y: scroll;
+
+  padding: 94px 12px;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal-franchise {
+  position: relative;
+  padding: 28px 30px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 2px solid #f8d24e;
+  border-radius: 4px;
+  transition: transform var(--timing-duration) var(--timing-function);
+  transform: translate(0%, 0%) scale(1);
+
+  .backdrop.is-hidden & {
+    transform: translate(0%, 0%) scale(1.1);
+  }
+}
+
+.modal-franchise-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: transform var(--timing-duration) var(--timing-function);
+
+  &__icon {
+    transform: scale(1);
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.7);
+    fill: #f8d24e;
+  }
+}
+
+.modal-franchise-title {
+  font-family: 'Seymour One';
+  @include font(400, 16px, 24px);
+  text-align: center;
+  color: var(--main-dark-color);
+  margin-bottom: 20px;
+  letter-spacing: normal;
+}
+
+.modal-franchise-text {
+  @include font(400, 14px, 20px);
+  color: var(--main-dark-color);
+  margin-bottom: 24px;
+  letter-spacing: normal;
+}
+
+.form-franchise-wrapper {
+  position: relative;
+}
+
+.modal-franchise-input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding-left: 12px;
+  margin-bottom: 18px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+
+.modal-franchise-desc {
+  position: absolute;
+  top: 50%;
+  left: 12;
+  transform: translateY(-50%);
+  @include font(400, 12px, 17px);
+  color: var(--main-dark-color);
+  transition: transform var(--timing-duration) var(--timing-function);
+}
+
+.modal-franchise-input:focus + .modal-franchise-desc,
+.modal-franchise-input:not(:placeholder-shown) + .modal-franchise-desc {
+  transform: translateY(-33px);
+}
+
+.modal-franchise-message {
+  resize: none;
+  width: 100%;
+  height: 64px;
+  padding-top: 8px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+}
+
+.modal-franchise-message::placeholder {
+  @include font(400, 12px, 17px);
+  color: var(--main-dark-color);
+}
+
+.modal-franchise-btn {
+  display: block;
+  @include font(600, 12px, 15px);
+  background-color: var(--current-color);
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 43px;
+  margin: 0 auto;
+  cursor: pointer;
+
+  transition: background-color var(--timing-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-franchise {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-franchise {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-franchise {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 568px;
+    padding-top: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 32px;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+  .modal-franchise-button {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal-franchise-title {
+    width: 332px;
+    margin: 0 auto;
+    @include font(400, 20px, 28px);
+    margin-bottom: 24px;
+  }
+
+  .modal-franchise-text {
+    @include font(400, 16px, 22px);
+    color: var(--main-dark-color);
+    margin-bottom: 32px;
+  }
+
+  .modal-franchise-form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .modal-franchise-input {
+    height: 42px;
+    margin-bottom: 16px;
+  }
+
+  .modal-franchise-desc {
+    @include font(400, 14px, 20px);
+    transform: translate(0, -50%);
+  }
+
+  .modal-franchise-message {
+    margin-bottom: 32px;
+  }
+
+  .modal-franchise-message::placeholder {
+    @include font(400, 14px, 20px);
+  }
+
+  .modal-franchise-input:focus + .modal-franchise-desc,
+  .modal-franchise-input:not(:placeholder-shown) + .modal-franchise-desc {
+    transform: translate(-65px, -50%);
+  }
+
+  .modal-franchise-btn {
+    @include font(600, 14px, 17px);
+    background-color: var(--current-color);
+    width: 150px;
+    padding: 12px 43px;
+  }
+}

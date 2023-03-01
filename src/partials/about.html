@@ -1,0 +1,117 @@
+<section class="about" id="how-its-made">
+  <div class="container">
+    <p class="about__subtitle">Tradition and love</p>
+    <h2 class="about__title">How it's made?</h2>
+    <div class="about__body">
+      <div class="about__decoration">
+        <div class="about__image">
+          <picture>
+            <source
+              srcset="
+                ./images/about/cow-about-desk.webp    1x,
+                ./images/about/cow-about-desk@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/about/cow-about-desk.jpg    1x,
+                ./images/about/cow-about-desk@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/about/cow-about-tablet.webp    1x,
+                ./images/about/cow-about-tablet@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/about/cow-about-tablet.jpg    1x,
+                ./images/about/cow-about-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/about/cow-about-mobile.webp    1x,
+                ./images/about/cow-about-mobile@2x.webp 2x
+              "
+              media="(max-width: 767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/about/cow-about-mobile.jpg    1x,
+                ./images/about/cow-about-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+              type="image/jpeg"
+            />
+            <img
+              src="./images/about/cow-about-mobile.jpg"
+              alt="Зображення корови"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="about__descr">
+        <div class="about__text">
+          <p class="about__text-bigger-size">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+          <p class="about__text-smaller-size">
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
+          </p>
+          <p class="about__last-block about__text-smaller-size">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </div>
+        <button
+          type="button"
+          class="about__button button-filled"
+          data-modal-read-more-open
+        >
+          Read more
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal-read-more>
+    <div class="read-more-modal">
+      <button class="read-more-button popup" data-modal-read-more-close>
+        <svg class="read-more-button__icon" width="16" height="16">
+          <use href="./images/contacts/icon-contacts.svg#close-line"></use>
+        </svg>
+      </button>
+      <p class="read-more-title">How it’s made?</p>
+      <iframe
+        class="read-more-video modal-iframe hidden.iframe"
+        data-src="https://www.youtube.com/embed/BInCIvMda4w"
+     
+        allowfullscreen
+        src="https://www.youtube.com/embed/BInCIvMda4w"
+        title="The Best Ice Cream Shop in America"
+        
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p class="read-more-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
+    </div>
+  </div>
+</section>

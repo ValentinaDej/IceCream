@@ -1,0 +1,130 @@
+<header class="hero-header">
+    <div class="container hero-header" id="home">
+        <!-- <a href="./index.html" class="logo"><img src="./images/header/logo.png" alt="Ice logo" class="logo__img"></a> -->
+        <a href="./index.html" class="logo__link"><span class="logo__img"></a>    
+        <nav class="nav">
+            <ul class="menu-list">
+                <li class="menu-list__item"><a href="#home" class="menu-list__link">Home</a> </li>
+                <!-- <li class="menu-list__item"><a href="#about-us" class="menu-list__link">About us</a> </li> -->
+                <li class="menu-list__item"><a href="#how-its-made" class="menu-list__link">How it’s made?</a> </li>
+                <li class="menu-list__item"><a href="#our-products" class="menu-list__link">Our products</a> </li>
+                <li class="menu-list__item"><a href="#contact" class="menu-list__link">Contact</a> </li>
+            </ul>
+        </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+            <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+                <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+        </button>
+
+        <button class="button-filled btn-buy-now-pos" type="button" data-modal-bno>
+            Buy now
+        </button>
+        <h1 class="key-phrase">ice cream<br> made with<br> <span>passion</span></h1>
+        <div class="hero-link">
+            <!-- <a href="#products" class="hero-link__products">Products</a> -->
+            <a href="#our-products" class="button-empty">Products</a>
+            <a href="#how-its-made" class="underlined-link how-its-made-pos">How it's made?</a>
+        </div>
+        <P class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</P>
+        <a href="#home" class="hero-arrow__link">
+            <!-- <svg class="hero-arrow__img" width="40" height="20">
+                <use href="./images/symbol-defs.svg#hero-arrow"></use>
+            </svg> -->
+        </a>
+
+        <div class="cafe-count">16 <span>cafes</span></div>
+        <div class="food-truck-count">23 <span>food trucks</span></div>
+        <picture>
+            <source srcset="./images/header/icecream_desktop.png 1x, ./images/header/icecream_desktop@2x.png 2x" media="(min-width: 1200px)">
+            <source srcset="./images/header/icecream_tablet.png 1x, ./images/header/icecream_tablet@2x.png 2x" media="(min-width: 768px)">
+            <source srcset="./images/header/icecream_mobile.png 1x, ./images/header/icecream_mobile@2x.png 2x" media="(min-width: 270px)">
+            <img src="./images/header/icecream_mobile.png" alt="" class="icecream__img">
+        </picture>
+        <picture>
+            <source srcset="./images/header/plate_desktop.png 1x, ./images/header/plate_desktop@2x.png 2x" media="(min-width: 1200px)">
+            <source srcset="./images/header/plate_tablet.png 1x, ./images/header/plate_tablet@2x.png 2x" media="(min-width: 768px)">
+            <img src="./images/header/plate_desktop.png" alt="" class="plate__img">
+        </picture>
+    </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+            <!-- <a href="./index.html" class="mobile logo"><img src="./images/header/logo.png" alt="Ice logo" class="logo__img"></a> -->
+            <a href="./index.html" class="logo__link"><span class="logo__img"></a>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu__item"><a href="#home" class="mobile-menu__link" onclick=closeMobileMenu()>Home</a></li>
+                <!-- <li class="mobile-menu__item"><a href="#about-us" class="mobile-menu__link" onclick=closeMobileMenu()>About us</a></li> -->
+                <li class="mobile-menu__item"><a href="#how-its-made" class="mobile-menu__link" onclick=closeMobileMenu()>How it’s made?</a></li>
+                <li class="mobile-menu__item"><a href="#our-products" class="mobile-menu__link" onclick=closeMobileMenu()>Our products</a></li>
+                <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link" onclick=closeMobileMenu()>Contact</a> </li>
+            </ul>
+            <button class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#btn-close"></use>
+                </svg>
+            </button>
+            <button class="button-filled btn-buy-now-mobile" type="button" mobile-modal-bno>Buy now</button>            
+        </div>
+    </div>
+
+
+    
+    <div class="backdrop is-hidden" data-modal-buy-now>
+        <div class="modal-franchise">
+            <button class="modal-franchise-button" data-modal-buy-now-close>
+                <svg class="modal-franchise-button__icon" width="16" height="16">
+                    <use href="./images/contacts/icon-contacts.svg#close-line"></use>
+                </svg>
+            </button>
+            <p class="modal-franchise-title">
+                Buy now
+            </p>
+            <ul class="products-list list product-list--bn-modal">
+                <li class="ice-crem-one bn-modal__item">
+                    <div class="products-card ice-cream-bn-modal product-card--bn-modal">
+                        <h3 class="card-name name-ice-cream card-name--bn-modal name-ice-cream--bn-modal">ice cream</h3>
+                            <button type="button" class="btn-arrow">
+                        </button>
+                    </div>
+                </li>
+                <li class="ice-crem-two bn-modal__item">
+                    <div class="products-card ice-coffee-bn-modal product-card--bn-modal">
+                        <h3 class="card-name name-ice-coffe card-name--bn-modal name-ice-coffe--bn-modal">ice coffee</h3>
+                        <button type="button" class="btn-arrow">
+                        </button>
+                    </div>
+                </li>
+                <li class="ice-crem-three bn-modal__item">
+                    <div class="products-card milkshake-bn-modal product-card--bn-modal">
+                        <h3 class="card-name name-milkshake card-name--bn-modal name-milkshake--bn-modal">milkshakes</h3>
+                        <button type="button" class="btn-arrow">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="modal-franchise-form form-bn-modal">
+                <div class="form-franchise-wrapper">
+                    <input id="user_name" class="modal-franchise-input" type="text" required pattern="[a-zA-Zа-яА-Я]+"
+                        minlength="2" placeholder=" "/>
+                    <label for="user_name" class="modal-franchise-desc">Name</label>
+                </div>
+                <div class="form-franchise-wrapper">
+                    <input id="user_phone" class="modal-franchise-input" type="tel" required placeholder=" "
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+                    <label for="user_phone" class="modal-franchise-desc">Phone</label>
+                </div>
+                <!-- <div class="form-franchise-wrapper">
+                    <input id="user_mail" class="modal-franchise-input" type="email" required placeholder=" "
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                    <label for="user_mail" class="modal-franchise-desc">Email</label>
+                </div> -->
+                <label class="modal-franchise-desc-message">
+                    <textarea name="user_coments" class="modal-franchise-message" placeholder="Comment"></textarea>
+                </label>
+                <button type="submit" class="modal-franchise-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</header>
